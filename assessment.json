@@ -1,0 +1,14 @@
+[
+  {
+    "module_id": "M-0",
+    "assessment_id": "A-0",
+    "number": 1,
+    "learning_outcomes": [
+      "LO1",
+      "LO2"
+    ],
+    "volume": "2000 words",
+    "weight": "70%",
+    "submission_date": "2/5/20209"
+  }
+]
