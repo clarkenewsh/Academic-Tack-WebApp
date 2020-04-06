@@ -58,7 +58,7 @@ moduleButton.addEventListener("click", function(){
   assessmentPage.hidden = true;
   modulePage.hidden = false;
 
-  // GET request 
+  // GET modue json data 
   var moduleRequest = new XMLHttpRequest();
   moduleRequest.open('GET', 'https://raw.githubusercontent.com/clarkenewsh/Academic-Tack-WebApp/master/module.json');
   moduleRequest.onload = function() {
@@ -73,18 +73,16 @@ moduleButton.addEventListener("click", function(){
 //Render HTML Modules JSON data
 function showModuleSection(mdata){
   var htmlString = "";
-   for(var i = 0; i < data.length; i++) {
+   for(var j = 0; j < mdata.length; j++) {
     htmlString += '<div class="container">' + 
                       '<div class="card col">' +
                         '<div class="card-body">' +
-                          '<h4>' + mdata[i].id + '</h4>' +
-                          '<h5>' + mdata[i].title + '</h5>' +
-                          '<p>' + mdata[i].hours + '</p>' +
+                          '<h4>' + mdata[j].module_id + '</h4>' +
+                          '<h5>' + mdata[j].title + '</h5>' +
+                          '<p>' + 'Hours of study:' + mdata[j].hours + '</p>' +
                         '</div>' +
                       '</div>' +
                     '</div>';
-
-
   }
   moduleContainer.insertAdjacentHTML('beforeend', htmlString);
 }
@@ -96,7 +94,36 @@ assessmentButton.addEventListener("click", function(){
   modulePage.hidden = true;
   degreePage.hidden = true;
   assessmentPage.hidden = false;
+
+  // GET assessment json data 
+  var assessmentRequest = new XMLHttpRequest();
+  assessmentRequest.open('GET', 'https://raw.githubusercontent.com/clarkenewsh/Academic-Tack-WebApp/master/assesment.json');
+  assessmentRequest.onload = function() {
+    console.log(assessmentRequest.responseText);
+    var assessmentData = JSON.parse(assessmentRequest.responseText);
+    showAssessmentSection(assessmentData);
+  };
+  assessmentRequest.send();
+
 });
+
+//Render HTML assessment JSON data
+function showAssessmentSection(adata){
+  var htmlString = "";
+   for(var j = 0; j < adata.length; j++) {
+    htmlString += '<div class="container">' + 
+                      '<div class="card col">' +
+                        '<div class="card-body">' +
+                          '<h4>' + adata[j].module_id + '</h4>' +
+                          '<h5>' + adata[j].assessment_id + '</h5>' +
+                        '</div>' +
+                      '</div>' +
+                    '</div>';
+  }
+  assessmentContainer.insertAdjacentHTML('beforeend', htmlString);
+}
+
+
 
 // Return to dashboard functionality - reload content on refresh
 dashboardButton.addEventListener("click", function(){
