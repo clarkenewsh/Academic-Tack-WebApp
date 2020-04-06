@@ -1,21 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Academic Tracker CW2</title>
 </head>
+
 <body>
 
   <header>
-      <h1>Academic Tracker Web App</h1>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+      <a class="navbar-brand" id="dashboard-button" href="#">
+        <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
+        Academic Tracker
+      </a>
+    </nav>
   </header>
 
   <main>
+
+    <section id="dashboard">
+      <div class="container">
+        <div class="row">
+          <div class="card col">
+            <div class="card-body">
+              <h5 class="card-title">Degree Paths</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Computer Science Degree Paths</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" id="degrees-button" class="card-link">See more</a>
+            </div>
+          </div>
+          <div class="card col">
+            <div class="card-body">
+              <h5 class="card-title">Modules</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Computer Science Degree Paths</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a id="module-button" href="#" class="card-link">See more</a>
+            </div>
+          </div>
+          <div class="card col">
+            <div class="card-body">
+              <h5 class="card-title">Assessments</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Computer Science Degree Paths</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a id="assessment-button" href="#" class="card-link">See more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section id="degree-page">
+    <a href="#" id="dashboard-button" class="card-link">back to dashboard</a>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+          aria-controls="pills-home" aria-selected="true">Degree Programmes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+          aria-controls="pills-profile" aria-selected="false">Module</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+          aria-controls="pills-contact" aria-selected="false">Add new Degree Programme</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">List of
+        degree programmes to go here</div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Moudles &
+        assesments to go here </div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">form to create
+        new degree programme to go here. include input fields in line with class diagrams</div>
+    </div>
+  </section>
+
+  <section id="module-page">
+    <h1>Modules page</h1>
+    <a href="#" id="dashboard-button" class="card-link">back to dashboard</a>
+
+  </section>
+
+  <section id="assessment-page">
+    <h1>assessments page</h1>
+    <a href="#" id="dashboard-button" class="card-link">back to dashboard</a>
+    
+  </section>
 
 
 
@@ -38,4 +117,5 @@
   </script>
   <script src="main.js"></script>
 </body>
+
 </html>
