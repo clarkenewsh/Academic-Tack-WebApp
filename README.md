@@ -1,0 +1,3 @@
+An Academic based Web Application to track academic courses, research, modules and assessments.
+
+Deployment plans and start up instructions to follow........ 

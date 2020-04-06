@@ -15,15 +15,24 @@
 
   <header>
     <nav class="navbar navbar-light bg-light justify-content-center">
-      <a class="navbar-brand" id="dashboard-button" href="#">
+      <a class="navbar-brand" href="#">
         <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
-        Academic Tracker
+        Academic Tracker App
       </a>
+      
+      <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 100-6 3 3 0 000 6z"
+          clip-rule="evenodd" />
+      </svg>
+      <p>: Admin User</p>
     </nav>
   </header>
+  <div class="row">
+    <a href="#" id="dashboard-button">back to dashboard</a>
+  </div>
 
   <main>
-
     <section id="dashboard">
       <div class="container">
         <div class="row">
@@ -33,7 +42,7 @@
               <h6 class="card-subtitle mb-2 text-muted">Computer Science Degree Paths</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-              <a href="#" id="degrees-button" class="card-link">See more</a>
+              <a href="#" id="degree-button" class="card-link">See more</a>
             </div>
           </div>
           <div class="card col">
@@ -58,52 +67,43 @@
       </div>
     </section>
 
-      <section id="degree-page">
-    <a href="#" id="dashboard-button" class="card-link">back to dashboard</a>
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-          aria-controls="pills-home" aria-selected="true">Degree Programmes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-          aria-controls="pills-profile" aria-selected="false">Module</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-          aria-controls="pills-contact" aria-selected="false">Add new Degree Programme</a>
-      </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">List of
-        degree programmes to go here</div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">Moudles &
-        assesments to go here </div>
-      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">form to create
-        new degree programme to go here. include input fields in line with class diagrams</div>
-    </div>
-  </section>
+    <section id="degree-page">
+      <h1>Degree Programmes Page</h1>
+      <div id="degree-container">
 
-  <section id="module-page">
-    <h1>Modules page</h1>
-    <a href="#" id="dashboard-button" class="card-link">back to dashboard</a>
+      </div>
 
-  </section>
 
-  <section id="assessment-page">
-    <h1>assessments page</h1>
-    <a href="#" id="dashboard-button" class="card-link">back to dashboard</a>
-    
-  </section>
+    </section>
+
+    <section id="module-page">
+      <h1>Modules page</h1>
+      <div id="module-container">
+
+      </div>
+
+
+    </section>
+
+    <section id="assessment-page">
+      <h1>assessments page</h1>
+      <div id="assessment-container">
+
+      </div>
+
+
+    </section>
 
 
 
   </main>
 
-  <footer>
-
-
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
   </footer>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
