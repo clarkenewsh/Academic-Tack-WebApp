@@ -97,7 +97,7 @@ assessmentButton.addEventListener("click", function(){
 
   // GET assessment json data 
   var assessmentRequest = new XMLHttpRequest();
-  assessmentRequest.open('GET', 'https://raw.githubusercontent.com/clarkenewsh/Academic-Tack-WebApp/master/assesment.json');
+  assessmentRequest.open('GET', 'https://raw.githubusercontent.com/clarkenewsh/Academic-Tack-WebApp/master/assessment.json');
   assessmentRequest.onload = function() {
     console.log(assessmentRequest.responseText);
     var assessmentData = JSON.parse(assessmentRequest.responseText);
