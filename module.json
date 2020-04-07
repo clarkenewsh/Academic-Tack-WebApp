@@ -21,7 +21,7 @@
   },
   {
     "degree_id": "CS-01",
-    "module_id": "M-01",
+    "module_id": "M-02",
     "title": "Fundamentals of Web Development",
     "hours": "18",
     "learning_outcomes": [
@@ -41,7 +41,7 @@
   },
   {
     "degree_id": "CS-01",
-    "module_id": "M-01",
+    "module_id": "M-03",
     "title": "Computer Networks",
     "hours": "18",
     "learning_outcomes": [
@@ -60,8 +60,8 @@
     ]
   },
   {
-    "degree_id": "CS-01",
-    "module_id": "M-01",
+    "degree_id": "CS-02",
+    "module_id": "M-04",
     "title": "Foundations of Machine Learning",
     "hours": "18",
     "learning_outcomes": [
@@ -80,8 +80,8 @@
     ]
   },
   {
-    "degree_id": "CS-01",
-    "module_id": "M-01",
+    "degree_id": "CS-02",
+    "module_id": "M-05",
     "title": "Foundations of Robotics with Mathematics",
     "hours": "18",
     "learning_outcomes": [
@@ -100,8 +100,8 @@
     ]
   },
   {
-    "degree_id": "CS-01",
-    "module_id": "M-01",
+    "degree_id": "CS-02",
+    "module_id": "M-06",
     "title": "System Design and Analysis",
     "hours": "18",
     "learning_outcomes": [
