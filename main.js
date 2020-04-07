@@ -16,6 +16,8 @@ var degreeContainer = document.getElementById('degree-container');
 var moduleContainer = document.getElementById('module-container');
 var assessmentContainer = document.getElementById('assessment-container');
 
+
+
 // hide dashbaord and reveal degree path page with degree object json data
 degreesButton.addEventListener("click", function(){
   degreePage.hidden = false;
@@ -39,7 +41,7 @@ function showDegreesSection(data){
     htmlString += '<div class="container">' + 
                       '<div class="card col">' +
                         '<div class="card-body">' +
-                          '<h4>' + data[i].id + '</h4>' +
+                          '<h4>' + data[i].degree_id + '</h4>' +
                           '<h5>' + data[i].name + '</h5>' +
                         '</div>' +
                       '</div>' +
@@ -47,6 +49,11 @@ function showDegreesSection(data){
 
 
   }
+  for(var ii = 0; ii < data.length; ii++) {
+  
+  
+  }
+
   degreeContainer.insertAdjacentHTML('beforeend', htmlString);
 }
 
@@ -114,11 +121,11 @@ function showAssessmentSection(adata){
     htmlString += '<div class="container">' + 
                       '<div class="card col">' +
                         '<div class="card-body">' +
-                          '<h4>' + adata[j].module_id + '</h4>' +
-                          '<h5>' + adata[j].assessment_id + '</h5>' +
+                          '<h5>'+ 'Assessment: ' + adata[j].assessment_id + '</h5>' +
                         '</div>' +
                       '</div>' +
                     '</div>';
+                    
   }
   assessmentContainer.insertAdjacentHTML('beforeend', htmlString);
 }
@@ -127,11 +134,12 @@ function showAssessmentSection(adata){
 
 // Return to dashboard functionality - reload content on refresh
 dashboardButton.addEventListener("click", function(){
+  window.location.reload();
   dashboard.hidden = false;
   degreePage.hidden = true;
   modulePage.hidden = true;
   assessmentPage.hidden = true;
-  window.location.reload();
+  
 });
 
 
