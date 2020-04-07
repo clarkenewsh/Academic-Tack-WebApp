@@ -12,7 +12,7 @@
   },
     {
     "module_id": "M-2",
-    "assessment_id": "A-1",
+    "assessment_id": "A-2",
     "learning_outcomes": [
       "LO1",
       "LO2"
@@ -23,7 +23,7 @@
   },
     {
     "module_id": "M-1",
-    "assessment_id": "A-1",
+    "assessment_id": "A-3",
     "learning_outcomes": [
       "LO1",
       "LO2"
@@ -34,7 +34,7 @@
   },
     {
     "module_id": "M-1",
-    "assessment_id": "A-1",
+    "assessment_id": "A-4",
     "learning_outcomes": [
       "LO1",
       "LO2"
@@ -45,7 +45,7 @@
   },
     {
     "module_id": "M-1",
-    "assessment_id": "A-1",
+    "assessment_id": "A-5",
     "learning_outcomes": [
       "LO1",
       "LO2"
@@ -56,7 +56,7 @@
   },
     {
     "module_id": "M-1",
-    "assessment_id": "A-1",
+    "assessment_id": "A-6",
     "learning_outcomes": [
       "LO1",
       "LO2"
