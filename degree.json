@@ -13,13 +13,54 @@
       "EA-3"
     ],
     "modules": [
-      "M-1",
-      "M-1"
+      "M-CS1",
+      "M-CS2"
     ]
   },
   {
-    "degree_id": "CS-01",
-    "name": "BSc (Hons) Web Design & Developemnt",
+    "degree_id": "CS-02",
+    "title": "BSc (Hons) Computer Science",
+    "learning_outcomes": [
+      "LO1",
+      "LO2",
+      "LO3",
+      "LO4"
+    ],
+    "exit_wards": [
+      "EA-1",
+      "EA-2",
+      "EA-3",
+      "EA-4"
+    ],
+    "modules": [
+      "M-CS1",
+      "M-CS2"
+    ]
+  },
+  {
+    "degree_id": "CS-02",
+    "title": "BSc (Hons) Robotics and Artificial Intelligence",
+    "learning_outcomes": [
+      "LO1",
+      "LO2",
+      "LO3",
+      "LO4"
+    ],
+    "exit_wards": [
+      "EA-1",
+      "EA-2",
+      "EA-3",
+      "EA-4"
+    ],
+    "modules": [
+      "M-CS1",
+      "M-CS2",
+      "M-CS3"
+    ]
+  },
+    {
+    "degree_id": "CS-02",
+    "title": "BSc (Hons) Software Engineering",
     "learning_outcomes": [
       "LO1",
       "LO2",
@@ -31,8 +72,10 @@
       "EA-3"
     ],
     "modules": [
-      "M-1",
-      "M-1"
+      "M-CS1",
+      "M-CS2",
+      "M-CS3"
     ]
   }
+
 ]
