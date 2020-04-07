@@ -7,6 +7,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Academic Tracker CW2</title>
 </head>
@@ -19,48 +20,42 @@
         <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
         Academic Tracker App
       </a>
-      
-      <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 100-6 3 3 0 000 6z"
-          clip-rule="evenodd" />
-      </svg>
-      <p>: Admin User</p>
+      <a href="#" id="dashboard-button">Return to Dashboard</a>
     </nav>
   </header>
-  <div class="row">
-    <a href="#" id="dashboard-button">back to dashboard</a>
-  </div>
 
   <main>
     <section id="dashboard">
       <div class="container">
-        <div class="row">
-          <div class="card col">
+        <div class="row justify-content-center">
+          <div class="card col-lg-3">
             <div class="card-body">
+              <i class="fas fa-graduation-cap"></i>
               <h5 class="card-title">Degree Paths</h5>
               <h6 class="card-subtitle mb-2 text-muted">Computer Science Degree Paths</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-              <a href="#" id="degree-button" class="card-link">See more</a>
+              <a href="#" id="degree-button" class="card-link">Manage Degrees</a>
             </div>
           </div>
-          <div class="card col">
+          <div class="card col-lg-3">
             <div class="card-body">
+              <i class="fas fa-cube"></i>
               <h5 class="card-title">Modules</h5>
               <h6 class="card-subtitle mb-2 text-muted">Computer Science Degree Paths</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-              <a id="module-button" href="#" class="card-link">See more</a>
+              <a id="module-button" href="#" class="card-link">Manage Modules</a>
             </div>
           </div>
-          <div class="card col">
+          <div class="card col-lg-3">
             <div class="card-body">
+              <i class="fas fa-list-alt"></i>
               <h5 class="card-title">Assessments</h5>
               <h6 class="card-subtitle mb-2 text-muted">Computer Science Degree Paths</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-              <a id="assessment-button" href="#" class="card-link">See more</a>
+              <a id="assessment-button" href="#" class="card-link">Manage Assessments</a>
             </div>
           </div>
         </div>
@@ -83,7 +78,10 @@
       </div>
 
 
- 
+    </section>
+
+    <section>
+      
     </section>
 
     <section id="assessment-page">
@@ -99,11 +97,7 @@
 
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <span class="text-muted">Place sticky footer content here.</span>
-    </div>
-  </footer>
+  
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -116,6 +110,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <!-- Font awsome CDN -->
+  <script src="https://kit.fontawesome.com/aba40c1e5d.js" crossorigin="anonymous"></script>
   <script src="main.js"></script>
 </body>
 
