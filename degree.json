@@ -1,6 +1,24 @@
 [
   {
     "degree_id": "CS-01",
+    "title": "BSc (Hons) Web Design & Developemnt",
+    "learning_outcomes": [
+      "LO1",
+      "LO2",
+      "LO3"
+    ],
+    "exit_wards": [
+      "EA-1",
+      "EA-2",
+      "EA-3"
+    ],
+    "modules": [
+      "M-1",
+      "M-1"
+    ]
+  },
+  {
+    "degree_id": "CS-01",
     "name": "BSc (Hons) Web Design & Developemnt",
     "learning_outcomes": [
       "LO1",
@@ -13,7 +31,7 @@
       "EA-3"
     ],
     "modules": [
-      "M-0",
+      "M-1",
       "M-1"
     ]
   }
