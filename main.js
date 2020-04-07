@@ -41,8 +41,8 @@ function showDegreesSection(data){
     htmlString += '<div class="container">' + 
                       '<div class="card col">' +
                         '<div class="card-body">' +
-                          '<h4>' + data[i].degree_id + '</h4>' +
-                          '<h5>' + data[i].name + '</h5>' +
+                          '<h4>' + 'ID: ' + data[i].degree_id + '</h4>' +
+                          '<h5>' + data[i].title + '</h5>' + '<ul><li>' + data[i].learning_outcomes + '</ul></li>' +
                         '</div>' +
                       '</div>' +
                     '</div>';

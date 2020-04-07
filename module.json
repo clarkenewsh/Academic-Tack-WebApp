@@ -1,9 +1,9 @@
 [
   {
-    "degree_id": "U-0",
-    "module_id": "M-0",
-    "title": "Fundamentals of UX Design",
-    "hours": "36",
+    "degree_id": "CS-01",
+    "module_id": "M-01",
+    "title": "Foundations of Computer Science",
+    "hours": "18",
     "learning_outcomes": [
       "LO1",
       "LO2",
@@ -11,8 +11,113 @@
     ],
     "credits": "20",
     "assessments": [
-      "A-0",
-      "A-1"
+      "A-1",
+      "A-2"
+    ], 
+    "time_slot": [
+      "AM",
+      "PM"
+    ]
+  },
+  {
+    "degree_id": "CS-01",
+    "module_id": "M-01",
+    "title": "Fundamentals of Web Development",
+    "hours": "18",
+    "learning_outcomes": [
+      "LO1",
+      "LO2",
+      "LO3"
+    ],
+    "credits": "20",
+    "assessments": [
+      "A-1",
+      "A-2"
+    ], 
+    "time_slot": [
+      "AM",
+      "PM"
+    ]
+  },
+  {
+    "degree_id": "CS-01",
+    "module_id": "M-01",
+    "title": "Computer Networks",
+    "hours": "18",
+    "learning_outcomes": [
+      "LO1",
+      "LO2",
+      "LO3"
+    ],
+    "credits": "20",
+    "assessments": [
+      "A-1",
+      "A-2"
+    ], 
+    "time_slot": [
+      "AM",
+      "PM"
+    ]
+  },
+  {
+    "degree_id": "CS-01",
+    "module_id": "M-01",
+    "title": "Foundations of Machine Learning",
+    "hours": "18",
+    "learning_outcomes": [
+      "LO1",
+      "LO2",
+      "LO3"
+    ],
+    "credits": "20",
+    "assessments": [
+      "A-1",
+      "A-2"
+    ], 
+    "time_slot": [
+      "AM",
+      "PM"
+    ]
+  },
+  {
+    "degree_id": "CS-01",
+    "module_id": "M-01",
+    "title": "Foundations of Robotics with Mathematics",
+    "hours": "18",
+    "learning_outcomes": [
+      "LO1",
+      "LO2",
+      "LO3"
+    ],
+    "credits": "20",
+    "assessments": [
+      "A-1",
+      "A-2"
+    ], 
+    "time_slot": [
+      "AM",
+      "PM"
+    ]
+  },
+  {
+    "degree_id": "CS-01",
+    "module_id": "M-01",
+    "title": "System Design and Analysis",
+    "hours": "18",
+    "learning_outcomes": [
+      "LO1",
+      "LO2",
+      "LO3"
+    ],
+    "credits": "20",
+    "assessments": [
+      "A-1",
+      "A-2"
+    ], 
+    "time_slot": [
+      "AM",
+      "PM"
     ]
   }
+
 ]
