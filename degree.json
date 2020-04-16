@@ -13,8 +13,10 @@
       "EA-3"
     ],
     "modules": [
-      "M-CS1: Foundations of Computer Science",
-      "M-CS2: Fundamentals of Web Development"
+      "M-01: Foundations of Computer Science",
+      "M-02: Fundamentals of Web Development",
+      "M-03: Computer Networks",
+      "M-06: System Design & Analyis"
       
     ]
   },
@@ -24,18 +26,19 @@
     "learning_outcomes": [
       "LO1",
       "LO2",
-      "LO3",
-      "LO4"
+      "LO3"
     ],
     "exit_wards": [
       "EA-1",
       "EA-2",
-      "EA-3",
-      "EA-4"
+      "EA-3"
+
     ],
     "modules": [
-      "M-CS1",
-      "M-CS2"
+      "M-01: Foundations of Computer Science",
+      "M-02: Fundamentals of Web Development",
+      "M-03: Computer Networks",
+      "M-04: Foundations of Machine Learning"
     ]
   },
   {
@@ -44,19 +47,19 @@
     "learning_outcomes": [
       "LO1",
       "LO2",
-      "LO3",
-      "LO4"
+      "LO3"
+     
     ],
     "exit_wards": [
       "EA-1",
       "EA-2",
-      "EA-3",
-      "EA-4"
+      "EA-3"
+      
     ],
     "modules": [
-      "M-CS1",
-      "M-CS2",
-      "M-CS3"
+      "M-01: Foundations of Computer Science",
+      "M-05: Foundations of Robotics with Mathematics",
+      "M-04: Foundations of Machine Learning"
     ]
   },
     {
@@ -73,10 +76,10 @@
       "EA-3"
     ],
     "modules": [
-      "M-CS1",
-      "M-CS2",
-      "M-CS3"
+      "M-01: Foundations of Computer Science",
+      "M-02: Fundamentals of Web Development",
+      "M-03: Computer Networks",
+      "M-04: Foundations of Machine Learning"
     ]
   }
-
 ]
