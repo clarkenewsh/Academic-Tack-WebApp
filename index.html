@@ -7,7 +7,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Academic Tracker CW2</title>
 </head>
@@ -31,7 +32,7 @@
           <div class="card col-lg-3">
             <div class="card-body">
               <i class="fas fa-graduation-cap"></i>
-              <h5 class="card-title">Degree Paths</h5>
+              <h5 class="card-title">Degree Programs</h5>
               <h6 class="card-subtitle mb-2 text-muted">Computer Science Degree Paths</h6>
               <p class="card-text">Manage and create degree programmes for the current academic year</p>
               <a href="#" id="degree-button" class="card-link">Manage Degrees</a>
@@ -59,42 +60,42 @@
       </div>
     </section>
 
-    <section id="degree-page" class="container card card-body">
-      <h1 class="card-title">Degree Programmes Page</h1>
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Create new degree program
-  </button>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
- Copy
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>.
-  </div>
-</div>
-      <div id="degree-container">
-
+    <section id="degree-page">
+      <h1 class="card-title">Degree Programs</h1>
+      <hr>
+      <button id="create-btn" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+        aria-expanded="false" aria-controls="collapseExample">
+        Create degree program
+      </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Copy
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
+      <div id="degree-container"></div>
 
 
     </section>
 
     <section id="module-page">
-      <h1>Modules page</h1>
+      <h1>Modules</h1>
       <div id="module-container">
 
       </div>
@@ -103,7 +104,7 @@
     </section>
 
     <section id="assessment-page">
-      <h1>assessments page</h1>
+      <h1>Assessments</h1>
       <div id="assessment-container">
 
       </div>
@@ -115,7 +116,11 @@
 
   </main>
 
-  
+  <footer>
+
+  </footer>
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
