@@ -11,14 +11,16 @@ var degreesButton = document.getElementById("degree-button");
 var moduleButton = document.getElementById("module-button");
 var assessmentButton = document.getElementById("assessment-button");
 
-// Container to hold JSON Data
+// Containers to hold JSON Data
 var degreeContainer = document.getElementById('degree-container');
 var moduleContainer = document.getElementById('module-container');
 var assessmentContainer = document.getElementById('assessment-container');
 
 
 
-// hide dashbaord and reveal degree path page with degree object json data
+
+// http GET Degree json data 
+// hide dashbaord and reveal degree path page
 degreesButton.addEventListener("click", function(){
   degreePage.hidden = false;
   dashboard.hidden = true;
@@ -47,25 +49,26 @@ function showDegreesSection(data){
                     '<div class="card-body">' +
                       '<h4>' + 'ID: ' + data[i].degree_id + '</h4>' +
                       '<h4>' + data[i].title + '</h4>' +
-                      '<div id="data-container">' +
+                      '<hr>' +
+                      '<div id="degree-data-container">' +
                         '<div id=""module-data>' +
                           '<h6>' + 'Modules: ' + '</h6>' + 
-                          '<li>' + data[i].modules[0]+ '</li>' +
+                          '<ul><li>' + data[i].modules[0]+ '</li>' +
                           '<li>' + data[i].modules[1]+ '</li>' +
                           '<li>' + data[i].modules[2]+ '</li>' +
-                          '<li>' + data[i].modules[3]+ '</li>' +
+                          '<li>' + data[i].modules[3]+ '</li></ul>' +
                         '</div>' +
                         '<div id="learningOutcome-data" class="justify-content-end">' +
                           '<h6>' + 'Learning Outcomes: ' + '</h6>' + 
-                          '<li>' + data[i].learning_outcomes[0]+ '</li>' +
+                          '<ul><li>' + data[i].learning_outcomes[0]+ '</li>' +
                           '<li>' + data[i].learning_outcomes[1]+ '</li>' +
-                          '<li>' + data[i].learning_outcomes[2]+ '</li>' +
+                          '<li>' + data[i].learning_outcomes[2]+ '</li></ul>' +
                         '</div>' +
                         '<div id="exitAward-data">' + 
                           '<h6>' + 'Exit Awards: ' + '</h6>' +
-                          '<li>' + data[i].exit_wards[0]+ '</li>' +
+                          '<ul><li>' + data[i].exit_wards[0]+ '</li>' +
                           '<li>' + data[i].exit_wards[1]+ '</li>' +
-                          '<li>' + data[i].exit_wards[2]+ '</li>' +
+                          '<li>' + data[i].exit_wards[2]+ '</li></ul>' +
                         '</div>' +
                       '</div>' +
                   '</div>' +
@@ -77,15 +80,13 @@ function showDegreesSection(data){
   degreeContainer.insertAdjacentHTML('beforeend', htmlString);
 }
 
-
-
 // hide dashbaord and reveal modules page
 moduleButton.addEventListener("click", function(){
   dashboard.hidden = true;
   assessmentPage.hidden = true;
   modulePage.hidden = false;
 
-  // GET modue json data 
+  // http GET module json data 
   var moduleRequest = new XMLHttpRequest();
   moduleRequest.open('GET', 'https://raw.githubusercontent.com/clarkenewsh/Academic-Tack-WebApp/master/module.json');
   moduleRequest.onload = function() {
@@ -102,27 +103,42 @@ function showModuleSection(mdata){
   var htmlString = "";
    for(var j = 0; j < mdata.length; j++) {
     htmlString +=
-                      '<div class="card col">' +
-                        '<div class="card-body">' +
-                          '<h5>' + mdata[j].module_id + '</h5>' +
-                          '<h6>' + mdata[j].title + '</h6>' +
-                        '<div id=""module-data>' +
-                          '<h6>' + 'Modules: ' + '</h6>' + 
-                          '<li>' + mdata[j].learning_outcomes[0]+ '</li>' +
+                  '<div class="card">' +
+                    '<div class="card-body">' +
+                      '<h4>' + 'ID: ' + mdata[j].module_id + '</h4>' +
+                      '<h4>' + mdata[j].title + '</h4>' +
+                      '<hr>' +
+                      '<div id="module-data-container">' +
+                        '<div id="learningOutcome-data">' +
+                          '<h6>Learning Outcomes:</h6>' + 
+                          '<ul><li>' + mdata[j].learning_outcomes[0]+ '</li>' +
                           '<li>' + mdata[j].learning_outcomes[1]+ '</li>' +
-                          '<li>' + mdata[j].learning_outcomes[2]+ '</li>' +
+                          '<li>' + mdata[j].learning_outcomes[2]+ '</li></ul>' +
                         '</div>' +
-                          '<p>' + 'Hours of study:' + mdata[j].hours + '</p>' +
-                          '<p>' + 'Credits:' + mdata[j].credits + '</p>' +
+                        '<div id="assessment-data">' +
+                          '<h6>' + 'Assessments: ' + '</h6>' + 
+                          '<ul><li>' + mdata[j].assessments[0]+ '</li>' +
+                          '<li>' + mdata[j].assessments[1]+ '</li></ul>' +
                         '</div>' +
-                        '<div id=""assessment-data>' +
-                          '<h6>' + 'Modules: ' + '</h6>' + 
-                          '<li>' + mdata[j].assessments[0]+ '</li>' +
-                          '<li>' + mdata[j].assessments[1]+ '</li>' +
-                          '<li>' + mdata[j].assessments[2]+ '</li>' +
+                        '<div id="hours">' +
+                          '<h6>Hours of study:</h6>' + 
+                          '<ul><li>' + mdata[j].hours + '</li></ul>' +
+                        '</div>' + 
+                        '<div id="time-slot">' +
+                          '<h6>Time slot:</h6>' + 
+                          '<ul><li>' + mdata[j].time_slot[0] + '</li>' +
+                          '<li>' + mdata[j].time_slot[1] + '</li></ul>' +
+                        '</div>' +
+                        '<div>' +
+                          '<h6>Credits:</h6>' +
+                          '<ul><li>' + mdata[j].credits + '</li></ul>' +
                         '</div>' +
                       '</div>' +
-                    '</div>';
+                    '</div>' +
+                '</div>';
+
+
+           
   }
   moduleContainer.insertAdjacentHTML('beforeend', htmlString);
 }
@@ -151,13 +167,34 @@ assessmentButton.addEventListener("click", function(){
 function showAssessmentSection(adata){
   var htmlString = "";
    for(var x = 0; x < adata.length; x++) {
-    htmlString += '<div class="container">' + 
-                      '<div class="card col">' +
-                        '<div class="card-body">' +
-                          '<h5>'+ 'Assessment: ' + adata[x].assessment_id + '</h5>' +
+    htmlString +=  
+                  '<div class="card col">' +
+                    '<div class="card-body">' +
+                      '<h4>'+ 'Assessment: ' + adata[x].assessment_id + '</h4>' +
+                      '<hr>' +
+                      '<div id="assessment-data-container">' +
+                        '<div id="learningOutcome-data">' +
+                          '<h6>Learning Outcomes:</h6>' + 
+                          '<ul><li>' + adata[x].learning_outcomes[0]+ '</li>' +
+                          '<li>' + adata[x].learning_outcomes[1]+ '</li>' +
+                          '<li>' + adata[x].learning_outcomes[2]+ '</li></ul>' +
+                        '</div>' +
+                        '<div>' +
+                          '<h6>Volume:</h6>' +
+                          '<ul><li>' + adata[x].volume + '</li></ul>' +
+                        '</div>' +
+                        '<div>' +
+                          '<h6>Weighting:</h6>' +
+                          '<ul><li>' + adata[x].weight + '</li></ul>' +
+                        '</div>' +
+                        '<div>' +
+                          '<h6>Submission Date:</h6>' +
+                          '<ul><li>' + adata[x].submission_date + '</li></ul>' +
                         '</div>' +
                       '</div>' +
-                    '</div>';
+                    '</div>' +
+                  '</div>' +
+                '</div>';
                     
   }
   
