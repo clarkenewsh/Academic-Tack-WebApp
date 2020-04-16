@@ -4,7 +4,8 @@
     "assessment_id": "A-1",
     "learning_outcomes": [
       "LO1",
-      "LO2"
+      "LO2",
+      "LO3"
     ],
     "volume": "2000 words",
     "weight": "20%",
@@ -15,7 +16,8 @@
     "assessment_id": "A-2",
     "learning_outcomes": [
       "LO1",
-      "LO2"
+      "LO2",
+      "LO3"
     ],
     "volume": "2000 words",
     "weight": "80%",
@@ -26,7 +28,8 @@
     "assessment_id": "A-3",
     "learning_outcomes": [
       "LO1",
-      "LO2"
+      "LO2",
+      "LO3"
     ],
     "volume": "2000 words",
     "weight": "70%",
@@ -37,7 +40,8 @@
     "assessment_id": "A-4",
     "learning_outcomes": [
       "LO1",
-      "LO2"
+      "LO2",
+      "LO3"
     ],
     "volume": "2000 words",
     "weight": "70%",
@@ -48,7 +52,8 @@
     "assessment_id": "A-5",
     "learning_outcomes": [
       "LO1",
-      "LO2"
+      "LO2",
+      "LO3"
     ],
     "volume": "2000 words",
     "weight": "70%",
@@ -59,7 +64,8 @@
     "assessment_id": "A-6",
     "learning_outcomes": [
       "LO1",
-      "LO2"
+      "LO2",
+      "LO3"
     ],
     "volume": "2000 words",
     "weight": "70%",
