@@ -38,22 +38,42 @@ degreesButton.addEventListener("click", function(){
 function showDegreesSection(data){
   var htmlString = "";
    for(var i = 0; i < data.length; i++) {
-    htmlString += '<div class="container">' + 
-                      '<div class="card col">' +
-                        '<div class="card-body">' +
-                          '<h4>' + 'ID: ' + data[i].degree_id + '</h4>' +
-                          '<h5>' + data[i].title + '</h5>' + '<ul><li>' + data[i].learning_outcomes + '</ul></li>' +
+     
+      // for(var ii = 0; ii < data.learning_outcomes.length; ii++) {
+      //   console.log(data[i].learning_outcomes[ii]);
+      // append html
+      htmlString +=  
+                  '<div class="card">' +
+                    '<div class="card-body">' +
+                      '<h4>' + 'ID: ' + data[i].degree_id + '</h4>' +
+                      '<h4>' + data[i].title + '</h4>' +
+                      '<div id="data-container">' +
+                        '<div id=""module-data>' +
+                          '<h6>' + 'Modules: ' + '</h6>' + 
+                          '<li>' + data[i].modules[0]+ '</li>' +
+                          '<li>' + data[i].modules[1]+ '</li>' +
+                          '<li>' + data[i].modules[2]+ '</li>' +
+                          '<li>' + data[i].modules[3]+ '</li>' +
+                        '</div>' +
+                        '<div id="learningOutcome-data" class="justify-content-end">' +
+                          '<h6>' + 'Learning Outcomes: ' + '</h6>' + 
+                          '<li>' + data[i].learning_outcomes[0]+ '</li>' +
+                          '<li>' + data[i].learning_outcomes[1]+ '</li>' +
+                          '<li>' + data[i].learning_outcomes[2]+ '</li>' +
+                        '</div>' +
+                        '<div id="exitAward-data">' + 
+                          '<h6>' + 'Exit Awards: ' + '</h6>' +
+                          '<li>' + data[i].exit_wards[0]+ '</li>' +
+                          '<li>' + data[i].exit_wards[1]+ '</li>' +
+                          '<li>' + data[i].exit_wards[2]+ '</li>' +
                         '</div>' +
                       '</div>' +
-                    '</div>';
-
-
-  }
-  for(var ii = 0; ii < data.length; ii++) {
-  
-  
-  }
-
+                  '</div>' +
+                '</div>';
+    
+    } 
+  // 
+  // Insert html in degree section
   degreeContainer.insertAdjacentHTML('beforeend', htmlString);
 }
 
@@ -81,12 +101,25 @@ moduleButton.addEventListener("click", function(){
 function showModuleSection(mdata){
   var htmlString = "";
    for(var j = 0; j < mdata.length; j++) {
-    htmlString += '<div class="container">' + 
+    htmlString +=
                       '<div class="card col">' +
                         '<div class="card-body">' +
-                          '<h4>' + mdata[j].module_id + '</h4>' +
-                          '<h5>' + mdata[j].title + '</h5>' +
+                          '<h5>' + mdata[j].module_id + '</h5>' +
+                          '<h6>' + mdata[j].title + '</h6>' +
+                        '<div id=""module-data>' +
+                          '<h6>' + 'Modules: ' + '</h6>' + 
+                          '<li>' + mdata[j].learning_outcomes[0]+ '</li>' +
+                          '<li>' + mdata[j].learning_outcomes[1]+ '</li>' +
+                          '<li>' + mdata[j].learning_outcomes[2]+ '</li>' +
+                        '</div>' +
                           '<p>' + 'Hours of study:' + mdata[j].hours + '</p>' +
+                          '<p>' + 'Credits:' + mdata[j].credits + '</p>' +
+                        '</div>' +
+                        '<div id=""assessment-data>' +
+                          '<h6>' + 'Modules: ' + '</h6>' + 
+                          '<li>' + mdata[j].assessments[0]+ '</li>' +
+                          '<li>' + mdata[j].assessments[1]+ '</li>' +
+                          '<li>' + mdata[j].assessments[2]+ '</li>' +
                         '</div>' +
                       '</div>' +
                     '</div>';
@@ -117,16 +150,17 @@ assessmentButton.addEventListener("click", function(){
 //Render HTML assessment JSON data
 function showAssessmentSection(adata){
   var htmlString = "";
-   for(var j = 0; j < adata.length; j++) {
+   for(var x = 0; x < adata.length; x++) {
     htmlString += '<div class="container">' + 
                       '<div class="card col">' +
                         '<div class="card-body">' +
-                          '<h5>'+ 'Assessment: ' + adata[j].assessment_id + '</h5>' +
+                          '<h5>'+ 'Assessment: ' + adata[x].assessment_id + '</h5>' +
                         '</div>' +
                       '</div>' +
                     '</div>';
                     
   }
+  
   assessmentContainer.insertAdjacentHTML('beforeend', htmlString);
 }
 
