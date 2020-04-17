@@ -122,7 +122,7 @@ function showModuleSection(mdata){
                         '</div>' +
                         '<div id="hours">' +
                           '<h6>Hours of study:</h6>' + 
-                          '<ul><li>' + mdata[j].hours + '</li></ul>' +
+                          '<p>' + mdata[j].hours + '</p>' +
                         '</div>' + 
                         '<div id="time-slot">' +
                           '<h6>Time slot:</h6>' + 
@@ -131,7 +131,7 @@ function showModuleSection(mdata){
                         '</div>' +
                         '<div>' +
                           '<h6>Credits:</h6>' +
-                          '<ul><li>' + mdata[j].credits + '</li></ul>' +
+                          '<p>' + mdata[j].credits + '</li></ul>' +
                         '</div>' +
                       '</div>' +
                     '</div>' +
@@ -181,15 +181,15 @@ function showAssessmentSection(adata){
                         '</div>' +
                         '<div>' +
                           '<h6>Volume:</h6>' +
-                          '<ul><li>' + adata[x].volume + '</li></ul>' +
+                          '<p>' + adata[x].volume + '</p>' +
                         '</div>' +
                         '<div>' +
                           '<h6>Weighting:</h6>' +
-                          '<ul><li>' + adata[x].weight + '</li></ul>' +
+                          '<p>' + adata[x].weight + '</p>' +
                         '</div>' +
                         '<div>' +
                           '<h6>Submission Date:</h6>' +
-                          '<ul><li>' + adata[x].submission_date + '</li></ul>' +
+                          '<p>' + adata[x].submission_date + '</p>' +
                         '</div>' +
                       '</div>' +
                     '</div>' +

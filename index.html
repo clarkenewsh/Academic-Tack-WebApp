@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +16,12 @@
 
   <header>
     <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand"  href="#">
+      <a class="navbar-brand" href="#">
         <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
         Academic Tracker App
       </a>
       <a href="#" id="dashboard-button">Return to Dashboard</a>
-
     </nav>
-
   </header>
 
   <main>
@@ -65,9 +62,48 @@
     <section id="degree-page">
       <h1 class="card-title">Degree Programs</h1>
       <hr>
-      <button id="create-btn" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-        aria-expanded="false" aria-controls="collapseExample">
-        Create degree program
+      <button id="create-btn" class="btn btn-primary" type="button" data-toggle="collapse"
+        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Create Degree Program
+      </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Please complete each field of the form to succesfully create a new Degree Program
+          <form>
+            <div class="form-group">
+              <label>Degree ID:</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Degree Title:</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Learning Outcomes:</label>
+              <input class="form-control" type="text">
+          </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div id="degree-container"></div>
+    </section>
+
+    <section id="module-page">
+      <h1>Modules</h1>
+      <hr>
+            <button id="create-btn" class="btn btn-primary" type="button" data-toggle="collapse"
+        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Create Module
       </button>
       </p>
       <div class="collapse" id="collapseExample">
@@ -91,40 +127,42 @@
           </form>
         </div>
       </div>
-      <div id="degree-container"></div>
-
-
-    </section>
-
-    <section id="module-page">
-      <h1>Modules</h1>
-      <hr>
-      <div id="module-container">
-
-      </div>
-
-
+      <div id="module-container"></div>
     </section>
 
     <section id="assessment-page">
       <h1>Assessments</h1>
       <hr>
-      <div id="assessment-container">
-
+            <button id="create-btn" class="btn btn-primary" type="button" data-toggle="collapse"
+        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Create Assessment
+      </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Copy
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
-
-
+      <div id="assessment-container"></div>
     </section>
 
-
-
   </main>
-
-  <footer>
-
-  </footer>
-
-
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

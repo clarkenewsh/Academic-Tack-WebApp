@@ -43,35 +43,15 @@ a {
   transform: translateY(4px);
 }
 
-#create-btn {
-
-}
-
-
-/* #content {
-	width: 400px;
-	background-color: #fff;
-	padding: 20px;
-	padding-top: 0;
-	font-family: calibri;
-	font-size: 18px;
-	color: #444;
-	margin: 0 auto;
-
-	max-height: 270px;
-	overflow: hidden; */
-
-
-	/*set tranisitions up*/
-
-	/* transition: max-height 0.7s;
-}
-
-#content.open {
-	max-height: 1000px;
-	transition: max-height 0.7s;
+/* #create-btn {
 
 } */
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  
+}
 
 main {
   padding: 40px 2vw;
@@ -87,10 +67,11 @@ main {
   margin: 0 auto;
 }
 
-#assessments-page {
+#assessment-page {
   width: 80%;
   margin: 0 auto;
 }
+
 
 
 
