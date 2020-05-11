@@ -4,7 +4,7 @@ body {
 }
 
 .navbar {
-  justify-content: center;
+ 
 }
 
 #dashboard {
@@ -35,6 +35,8 @@ a {
 #dashboard-button {
   float: right;
   margin: 30px 40px;
+  color: #0298A2;
+  text-decoration: underline;
 }
 
 .btn.btn.btn-primary:hover,
