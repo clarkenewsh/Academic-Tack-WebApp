@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Font Awsome CDN -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Academic Tracker CW2</title>
@@ -26,7 +27,8 @@
   </header>
 
   <main>
-    <section id="dashboard"> <!-- Start dashboard container -->
+    <section id="dashboard">
+      <!-- Start dashboard container -->
       <div class="container">
         <div class="row justify-content-center">
           <div class="card col-lg-3">
@@ -60,7 +62,8 @@
       </div>
     </section> <!-- end dashboard container -->
 
-    <section id="degree-page"> <!-- render Degree data HTML -->
+    <section id="degree-page">
+      <!-- render Degree data HTML -->
       <h1 class="card-title">Degree Programs</h1>
       <hr>
       <button id="create-btn" class="btn btn-primary" type="button" data-toggle="collapse"
@@ -84,7 +87,7 @@
             <div class="form-group">
               <label>Learning Outcomes:</label>
               <input class="form-control" type="text">
-          </div>
+            </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
               <input type="password" class="form-control" id="exampleInputPassword1">
@@ -100,10 +103,11 @@
       <div id="degree-container"></div>
     </section>
 
-    <section id="module-page"> <!-- render Module data HTML -->
+    <section id="module-page">
+      <!-- render Module data HTML -->
       <h1>Modules</h1>
       <hr>
-            <button id="create-btn" class="btn btn-primary" type="button" data-toggle="collapse"
+      <button id="create-btn" class="btn btn-primary" type="button" data-toggle="collapse"
         data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Create Module
       </button>
@@ -114,17 +118,32 @@
           <hr>
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <label>Degree ID:</label>
+              <input class="form-control" type="text">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label>Moudule ID:</label>
+              <input class="form-control" type="text">
             </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="form-group">
+              <label>Module Name:</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Hours:</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Learning Outcomes:</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Assessments:</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Time-Slot:</label>
+              <input class="form-control" type="text">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -133,10 +152,11 @@
       <div id="module-container"></div>
     </section>
 
-    <section id="assessment-page"> <!-- render Assessment data HTML -->
+    <section id="assessment-page">
+      <!-- render Assessment data HTML -->
       <h1>Assessments</h1>
       <hr>
-            <button id="create-btn" class="btn btn-primary" type="button" data-toggle="collapse"
+      <button id="create-btn" class="btn btn-primary" type="button" data-toggle="collapse"
         data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         Create Assessment
       </button>
@@ -146,17 +166,28 @@
           Please complete each field of the form to succesfully create a new Assessment
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <label>Module ID:</label>
+              <input class="form-control" type="text">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label>Assessment ID:</label>
+              <input class="form-control" type="text">
             </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="form-group">
+              <label>Learning Outcomes:</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Volume:</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Weighting:</label>
+              <input class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label>Submission Date:</label>
+              <input class="form-control" type="text">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
